@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="3dp"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    app:cardCornerRadius="30dp"
+    android:background="@drawable/event_displayevents"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+    <ImageView
+        android:id="@+id/event_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:scaleType="centerCrop"
+
+        android:background="@drawable/event_displayevents"/>
+
+
+         />
+    <TextView
+        android:id="@+id/eventname_input"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:textColor="#000000"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:textSize="4.5pt"
+        android:text="event name"/>
+
+    <!--  event date-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <Button
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/clock"/>
+    <TextView
+        android:id="@+id/dateevnt_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/10/1996"
+        android:textSize="4.5pt"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+    <!--event categorie-->
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/list_64"
+                />
+
+    <TextView
+        android:id="@+id/categorie_input"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="testets"
+        android:textSize="5pt"
+        android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

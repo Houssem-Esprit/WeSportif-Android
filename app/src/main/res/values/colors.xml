@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00ffffff</color>
+    <color name="colorAccent">#FF5B61</color>
+    <color name="colorButtonSeconnecter">#5680e9</color>
+    <color name="colorTextHint">#fff</color>
+    <color name="mapboxWhite">#ffffff</color>
+    <color name="mapboxBlue">#4264fb</color>
+    <color name="mapboxGrayLight">#c6d2e1</color>
+    <color name="mainColorPink">#FF5B61</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="register_bk_color">#FF5B61</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#FF5B61</color>
+    <color name="BackgroundChangeColor">#F5F5F5</color>
+    <color name="background">#dddddd</color>
+
+</resources>

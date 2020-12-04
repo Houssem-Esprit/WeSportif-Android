@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+
+    >
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/delete_64"
+        />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/sendCoachSearch"
+        android:layout_below="@id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/allevent_searchview"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="2pt"
+        app:queryHint="Rechercher"
+        app:iconifiedByDefault="false"
+
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewcoach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendCoachSearch"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+    />
+
+    <Button
+        android:id="@+id/envoyerTout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/recyclerViewcoach"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_envoyertout_coach"
+        android:text="@string/envoyer_tout"
+        android:textColor="#fff" />
+
+
+
+</RelativeLayout>

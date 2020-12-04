@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".Fragments.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:weightSum="6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="   Trouvez l'evenement parfait "
+                android:textColor="#000000"
+                android:textSize="8pt"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="8"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/firstSCrolingButton"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="end|center"
+                android:background="@drawable/rightarrow"
+                android:scaleType="centerInside" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="5"
+            android:id="@+id/recycler_event_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewcoach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#01676b"
+            android:weightSum="6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="   Recommandé pour vous "
+                    android:layout_weight="8"
+                    android:textColor="#fff"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/secondScrollingButton"
+                    android:layout_width="25dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/rightarrow"
+                    android:scaleType="centerInside" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewRecommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--   best 3 events    -->
+
+
+
+
+
+
+
+</LinearLayout>

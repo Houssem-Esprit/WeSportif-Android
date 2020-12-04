@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/whiteTextColor"
+    app:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="5dp"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/cin_coach"
+                style="@style/modifiedEditText"
+                android:maxLines="1"
+                android:inputType="number"
+                android:backgroundTint="#FF5B61"
+                android:hint="Entree votre cin"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wrong_cin_coach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FF5B61"
+            android:textSize="4.5pt"
+            android:text="your ID is fault please check !"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="2dp"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/nom_coach"
+                style="@style/modifiedEditText"
+                android:maxLines="1"
+                android:backgroundTint="#FF5B61"
+                android:hint="Entree votre nom"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wrong_nom_coach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FF5B61"
+            android:textSize="4.5pt"
+            android:text="your ID is fault please check !"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="2dp"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/prenom_coach"
+                style="@style/modifiedEditText"
+                android:maxLines="1"
+                android:backgroundTint="#FF5B61"
+                android:hint="Entree votre prenom"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wrong_prenom_coach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FF5B61"
+            android:textSize="4.5pt"
+            android:text="your ID is fault please check !"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="2dp"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/loginName_coach"
+                style="@style/modifiedEditText"
+                android:maxLines="1"
+                android:backgroundTint="#FF5B61"
+                android:hint="Entree votre login"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wrong_login_coach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FF5B61"
+            android:textSize="4.5pt"
+            android:text="your ID is fault please check !"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="2dp"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/password_coach"
+                style="@style/modifiedEditText"
+                android:maxLines="1"
+                android:backgroundTint="#FF5B61"
+                android:inputType="textPassword"
+                android:hint="Entree votre mot de passe"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wrong_password_coach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FF5B61"
+            android:textSize="4.5pt"
+            android:text="your ID is fault please check !"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="2dp"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/email_coach"
+                style="@style/modifiedEditText"
+                android:maxLines="1"
+                android:backgroundTint="#FF5B61"
+                android:hint="Entree votre email"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wrong_email_coach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FF5B61"
+            android:textSize="4.5pt"
+            android:text="your ID is fault please check !"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="2dp"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/adresse_coach"
+                style="@style/modifiedEditText"
+                android:maxLines="1"
+                android:backgroundTint="#FF5B61"
+                android:hint="Entree votre adresse"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wrong_adresse_coach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FF5B61"
+            android:textSize="4.5pt"
+            android:text="your ID is fault please check !"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="2dp"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/tel_coach"
+                style="@style/modifiedEditText"
+                android:maxLines="1"
+                android:backgroundTint="#FF5B61"
+                android:hint="Entree votre tel"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wrong_tel_coach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FF5B61"
+            android:textSize="4.5pt"
+            android:text="your ID is fault please check !"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="2dp"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/datenes_coach"
+                style="@style/modifiedEditText"
+                android:maxLines="1"
+                android:backgroundTint="#FF5B61"
+                android:inputType="date"
+                android:hint="Entree votre date de naissance"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/wrong_datenes_coach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FF5B61"
+            android:textSize="4.5pt"
+            android:text="your ID is fault please check !"/>
+
+
+        <Spinner
+            android:id="@+id/Spinner_signup_coach"
+            style="Widget.AppCompat.Spinner"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/dropdownListPreferredItemHeight"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/event_spinner_background"
+            android:dropDownWidth="match_parent"
+            android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+            android:paddingRight="14dp"
+            android:popupBackground="@android:color/white"
+            android:popupElevation="3dp"
+            android:stateListAnimator="@drawable/abcd"
+            />
+
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/inscrir_coach"
+            app:spinning_bar_width="4dp"
+            app:spinning_bar_color="#FFF"
+            android:text="S'inscrir"
+            style="@style/loginButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:spinning_bar_padding="6dp"
+            app:initialCornerAngle="27dp">
+
+
+        </br.com.simplepass.loading_button_lib.customViews.CircularProgressButton>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

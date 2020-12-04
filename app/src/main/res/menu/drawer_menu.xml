@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/accueil"
+            android:icon="@drawable/nav_home_64"
+            android:title="Accueil"/>
+
+        <item android:id="@+id/evenements"
+            android:icon="@drawable/nav_list_64"
+            android:title="Evenements"/>
+
+        <item android:id="@+id/mes_event"
+            android:icon="@drawable/user_list"
+
+            android:title="Mes evenement"/>
+
+        <item android:id="@+id/favoris"
+            android:icon="@drawable/favoris_event"
+            android:title="Favorie"/>
+
+        <item android:id="@+id/profile"
+            android:icon="@drawable/nav_profile_64"
+            android:title="Profile"/>
+
+        <item android:id="@+id/Create_event"
+            android:icon="@drawable/add_calendar"
+            android:title="Cree evenement"/>
+
+        <item android:id="@+id/deconnecter"
+            android:icon="@drawable/logout"
+            android:title="Déconnexion"
+
+            />
+
+
+
+
+
+
+    </group>
+</menu>

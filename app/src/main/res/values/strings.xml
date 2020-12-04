@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WeSportif</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="access_token">pk.eyJ1IjoiaG91Y2VtZXIiLCJhIjoiY2sza3AyNHZsMGRjMDNjbXlwbHRsdnVnNSJ9.Onq_Z441HTlJ4pyXtFqAcg</string>
+    <string-array name="fragments">
+        <item>Compte membre</item>
+        <item>Compte coach</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="envoyer_tout">Envoyer tout</string>
+
+    <!-- TODO : imc attributs-->
+    <string name="famine">famine</string>
+    <string name="maigreur">maigreur</string>
+    <string name="Corpulance_normal">Corpulence normale</string>
+    <string name="Surpoids">Surpoids</string>
+    <string name="Obésité_modérée">Obésité modérée</string>
+    <string name="Obésité_severe">obésité sévère</string>
+    <string name="obésité_morbide_ou_massive">obésité morbide ou massive</string>
+
+
+</resources>

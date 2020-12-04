@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/login_logo"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="We Sportif"
+                    android:fontFamily="cursive"
+                    android:textSize="19.5pt"
+                    android:textStyle="bold"
+                    android:textColor="#FF5B61"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/login_logo"
+                    android:layout_height="200dp"
+                    android:layout_width="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/logocircle"
+                    android:scaleType="centerCrop"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="#FF5B61"/>
+
+
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="5dp"
+                style="@style/parent">
+
+                <EditText
+                    android:id="@+id/loginName"
+                    style="@style/modifiedEditText"
+                    android:maxLines="1"
+                    android:backgroundTint="#FF5B61"
+                    android:hint="Entree votre login"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="10dp"
+                style="@style/parent">
+
+                <EditText
+                    android:id="@+id/loginPass"
+                    style="@style/modifiedEditText"
+                    android:maxLines="1"
+                    android:backgroundTint="#FF5B61"
+                    android:inputType="textPassword"
+                    android:hint="Entree votre login"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/viewParent"
+                android:text="Forgot Password?"
+                android:textColor="#FF5B61"
+                android:textSize="6pt"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"/>
+
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/loginid"
+                app:spinning_bar_width="4dp"
+                app:spinning_bar_color="#FFF"
+                android:text="Login"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:spinning_bar_padding="6dp"
+                app:initialCornerAngle="27dp">
+
+
+            </br.com.simplepass.loading_button_lib.customViews.CircularProgressButton>
+
+            <TextView
+                android:id="@+id/ToSignup"
+                style="@style/parent"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#FF5B61"
+                android:textSize="17sp"
+                android:text="Nouveau ? S'inscrire maintenant"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="12"
+                android:gravity="center"
+                android:layout_marginTop="40dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_weight="3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Utiliser une autre methode"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_weight="5"
+                    android:textSize="12sp"
+                    android:textAlignment="center"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#000000"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_facebook"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google_plus"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

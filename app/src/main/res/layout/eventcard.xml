@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_edges"
+        >
+
+        <ImageView
+            android:id="@+id/event_img"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:background="@drawable/event_displayevents"
+            android:scaleType="centerCrop" />
+
+
+        />
+
+        <TextView
+            android:id="@+id/eventname_input"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:paddingLeft="5dp"
+            android:text="event name"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <!--  event date-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/clock" />
+
+            <TextView
+                android:id="@+id/dateevnt_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="12/10/1996"
+                android:textColor="#000000"
+                android:textSize="6pt" />
+
+        </LinearLayout>
+
+        <!--event categorie-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/list_64" />
+
+            <TextView
+                android:id="@+id/categorie_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="7dp"
+    android:outlineSpotShadowColor="#303030"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/all_event_userimg_img"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                app:civ_border_width="0.5dp"
+                app:civ_border_color="#FF000000"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="user creator name"
+                    android:textColor="#000000"
+                    android:textSize="7pt"
+                    android:textStyle="bold"
+                    android:id="@+id/all_event_username_name"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="12/10/1996 a 15:00h"
+                    android:textSize="5pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.3">
+
+                <com.like.LikeButton
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="2dp"
+                    app:anim_scale_factor="2"
+                    app:circle_end_color="@color/colorAccent"
+                    app:circle_start_color="@color/colorPrimary"
+                    app:dots_primary_color="#FF5B61"
+                    app:dots_secondary_color="@color/colorPrimary"
+                    app:icon_size="28dp"
+                    app:icon_type="heart"
+                    app:is_enabled="true"
+                    app:like_drawable="@drawable/star_on"
+                    app:unlike_drawable="@drawable/star_off"
+                    app:liked="false"
+                    android:id="@+id/allEvent_fav"
+                    />
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/ellipsis" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/secondCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#A9A9A9"
+            app:contentPadding="0.5dp"
+            app:cardCornerRadius="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/therdCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:contentPadding="0.5dp"
+            app:cardCornerRadius="30dp">
+
+
+            <LinearLayout
+
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/allEvent_img"
+                        android:layout_width="200dp"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="150dp"
+                        android:background="@drawable/black_gradient2" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/allEvent_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Test name Event"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#FF5B61"
+                        android:textColorLink="#FF5B61"
+                        android:textSize="6.5pt"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/separator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/detaileventName_input"
+                        android:layout_marginTop="6dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/Date_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/calendar1" />
+
+                        <TextView
+                            android:id="@+id/detaileventDATE_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="6pt" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/PLace_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/map" />
+
+                        <TextView
+                            android:id="@+id/detaileventPlace_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="6pt" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Categorie_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/whistle1" />
+
+                        <TextView
+                            android:id="@+id/detaileventCategorie_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="6pt" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/NbParticipant_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/thinking" />
+
+                        <TextView
+                            android:id="@+id/detaileventNbParticipant_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="6pt" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/separator1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/NbParticipant_container"
+                        android:layout_marginTop="6dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <Button
+                        android:id="@+id/GoToDetail_button"
+                        android:layout_width="150dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#FF5B61"
+                        android:text="Plus detail" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/heart2_on" />
+
+            <TextView
+
+                android:id="@+id/NbJaime_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:text="15"
+
+                android:textSize="4.8pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="13" />
+
+            <TextView
+                android:id="@+id/NbComment_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="18"
+
+                android:textSize="4.8pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text=" Commentaires"
+
+                android:textSize="4.8pt" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/separatorThree"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D3D3D3" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.like.LikeButton
+                    android:id="@+id/doLike_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:anim_scale_factor="2"
+                    app:circle_end_color="@color/colorAccent"
+                    app:circle_start_color="@color/colorPrimary"
+                    app:dots_primary_color="#FF5B61"
+                    app:dots_secondary_color="@color/colorPrimary"
+                    app:icon_size="28dp"
+                    app:icon_type="heart"
+                    app:is_enabled="true"
+                    app:like_drawable="@drawable/heart2_on"
+                    app:unlike_drawable="@drawable/heart2_of"
+                    app:liked="false"
+                     />
+
+                <ImageButton
+                    android:id="@+id/AllEvent_CommentButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:src="@drawable/chat2" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separatorFour"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="#D3D3D3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/comment_fram">
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

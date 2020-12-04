@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="12dp">
+
+    <LinearLayout
+        android:id="@+id/InvitationCard_firstContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Demande de coaching"
+            android:textSize="7pt"
+            android:textAlignment="center"
+            android:layout_gravity="fill_horizontal"
+            android:paddingVertical="3pt"
+            android:textColor="#FF5B61"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/invitation_coaching_backgraound"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/InvitCoach_UserInviter_img"
+                android:layout_marginLeft="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                app:civ_border_width="0.5dp"
+                app:civ_border_color="#FF000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/InvitCoach_UserNameInviter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text="User Name"
+                        android:textSize="7pt"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/InvitCoach_DateCreation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="12/10/2020 15:20h"
+                        android:textSize="4.5pt"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/InvitCoach_ConfirmerButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Confirmer"
+                        android:background="#FF5B61"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"/>
+                    <Button
+                        android:id="@+id/InvitCoach_SupprimerButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Supprimer"
+                        android:background="#C8C8C8"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/detaileventName_input"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Nom d'evenement :"
+                    android:textSize="6pt"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/InvitCoach_EventName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="Workout For Every one "
+                    android:textSize="7pt"
+                    android:textStyle="bold"
+                    android:textColor="#FF5B61"
+                    android:textAllCaps="false"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/InvitCoach_VoirPlusButton"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:background="#FF5B61"
+                android:paddingVertical="1pt"
+                android:text="Voir detail"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="4pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/InvitCoach_mainFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/InvitCoach_VoirPMoinButton"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:background="#FF5B61"
+            android:paddingVertical="1pt"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:text="Voir detail"
+            android:textColor="#fff"
+            android:textSize="4pt"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

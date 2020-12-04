@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    android:layout_margin="2dp">
+
+
+    <LinearLayout
+        android:id="@+id/firstContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/CommentUser_img"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="#FF000000"/>
+
+
+
+
+        <LinearLayout
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/CommentUser_name"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="5.5pt"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+            <TextView
+                android:id="@+id/CommentDate_comment"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/10/2020 at 14:30h"
+                android:textSize="4pt"
+                android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Comment_commentText"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textMultiLine"
+            android:text="the abriviation of the mounten correspand to the pilot that give the nation his spirit"
+            android:textColor="#000000"
+            android:gravity="left"
+            android:paddingLeft="3pt"
+            android:paddingBottom="3pt"
+            android:paddingTop="3pt"
+            android:paddingRight="3pt"
+            android:freezesText="true"
+            android:background="@drawable/comment_displaycomment"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

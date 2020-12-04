@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WelcomeActivity"
+    >
+
+    <VideoView
+
+        android:id="@+id/videoid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="221dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/videoid"
+        app:srcCompat="@drawable/logocirclev2" />
+
+
+    <Button
+        android:id="@+id/devenirMemb"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btns_welcome_devmembre"
+        android:text="Devenir membre"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/seconnecter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="@+id/videoid"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/seconnecter"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_welcome_seconnecter"
+        android:text="Se connecter"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/videoid"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.966" />
+
+    <TextView
+        android:id="@+id/bienvenu"
+        android:layout_width="181dp"
+        android:layout_height="53dp"
+        android:fontFamily="cursive"
+        android:text="bienvenu !"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/videoid"
+        app:layout_constraintEnd_toEndOf="@+id/videoid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/videoid"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <TextView
+        android:id="@+id/bienvenutext"
+        android:layout_width="341dp"
+        android:layout_height="93dp"
+        android:text="Restez en pleine énergie tout en rencontrant de nouvaux amis.
+         WeSportif, partageons l'amour du sport"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        android:textColor="#fff"
+        android:fontFamily="cursive"
+        app:layout_constraintBottom_toBottomOf="@+id/videoid"
+        app:layout_constraintEnd_toEndOf="@+id/videoid"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/videoid"
+        app:layout_constraintTop_toTopOf="@+id/videoid"
+        app:layout_constraintVertical_bias="0.802" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

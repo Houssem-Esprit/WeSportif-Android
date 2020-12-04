@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetailEvent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:background="@color/mainColorPink"
+        android:minHeight="?attr/actionBarSize"
+
+        android:elevation="4dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WeSportif"
+            android:textStyle="bold"
+            android:textSize="13pt"
+            android:paddingTop="6pt"
+            android:fontFamily="@font/billabong"
+            android:layout_gravity="fill_vertical"
+            android:textColor="#fff"
+            android:layout_marginLeft="7dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+       >
+
+
+        <LinearLayout
+            android:id="@+id/First_LinearLayout_Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/detailevent_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/detailEvent_show_hide_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/detailevent_Gradiant_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/black_gradient" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/creatorEvent_img"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        app:civ_border_color="#fff"
+                        app:civ_border_width="1dp" />
+
+                    <TextView
+                        android:id="@+id/creatorEvent_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/creatorEvent_img"
+                        android:text="test name"
+                        android:textColor="#fff"
+                        android:textSize="5pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/detaileventName_input"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/detailevent_img"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Test Event"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/detaileventName_input"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/Date_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/event" />
+
+                <TextView
+                    android:id="@+id/detaileventDATE_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="6pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PLace_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pin" />
+
+                <TextView
+                    android:id="@+id/detaileventPlace_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="6pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NbParticipant_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/group" />
+
+                <TextView
+                    android:id="@+id/detaileventNbParticipant_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="6pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Coach_Fragment_if_exist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separator2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/Coach_Fragment_if_exist"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/ParticiperButton_container"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/Pariciper_button"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Participer"
+                    android:textAlignment="center"
+                    android:textSize="7pt"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_edges"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separator3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/ParticiperButton_container"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="DESCRIPTION"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detaileventDesc_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:text="text name"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
